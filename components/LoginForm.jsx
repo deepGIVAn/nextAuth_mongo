@@ -19,7 +19,7 @@ export default function LoginForm() {
       const res = await signIn("credentials", {
         email,
         password,
-        redirect: true,  //false on tutorial
+        redirect: true, //false on tutorial
       });
 
       console.log("logined", res);
@@ -61,7 +61,8 @@ export default function LoginForm() {
           )}
 
           <Link className="text-sm mt-3 text-right" href={"/register"}>
-            Don't have an account? <span className="underline">Register</span>
+            Don&apos;t have an account?{" "}
+            <span className="underline">Register</span>
           </Link>
         </form>
       </div>
