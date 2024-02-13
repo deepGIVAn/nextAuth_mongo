@@ -19,7 +19,7 @@ export default function LoginForm() {
       const res = await signIn("credentials", {
         email,
         password,
-        redirect: false, //false on tutorial
+        redirect: false, //false on tutorial  redirect true doesnot work on deployment..
       });
 
       console.log("logined", res);
