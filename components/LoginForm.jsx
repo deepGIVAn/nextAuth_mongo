@@ -19,7 +19,7 @@ export default function LoginForm() {
       const res = await signIn("credentials", {
         email,
         password,
-        redirect: true, //false on tutorial
+        redirect: false, //false on tutorial
       });
 
       console.log("logined", res);
@@ -29,7 +29,7 @@ export default function LoginForm() {
         return;
       }
 
-      // router.replace("/dashboard");
+      router.replace("/dashboard");
     } catch (error) {
       console.log(error);
     }
